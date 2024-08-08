@@ -1,0 +1,65 @@
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fff; /* Ensure a white background for the main content */
+}
+
+.content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.desc {
+  margin-bottom: 2rem;
+  color: #6b7280; /* Tailwind gray-500 */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4f46e5; /* Tailwind indigo-600 */
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #4338ca; /* Tailwind indigo-700 */
+}
+
+.result {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+  border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  text-align: left;
+}
+
+.result p {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+}
